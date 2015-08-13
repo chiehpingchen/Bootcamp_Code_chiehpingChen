@@ -3,6 +3,7 @@ int i;
 void setup(){
   size(800, 800);
   background(0);
+//  frameRate(120);
 }
 
 void draw(){
@@ -15,6 +16,10 @@ background(0);
       fill(random(0,255),random(0,255),random(0,255),3);
       triangle(j, i, mouseX, mouseY, i,j );
       triangle(i, j, mouseX, mouseY, j,i );
+      fill(random(0,255),random(0,255));
+      stroke(10);
+      line(j,i, mouseX, mouseY);
+      line(i,j, mouseX, mouseY);
     }
   }
 }
